@@ -16,6 +16,7 @@ class DBManager(metaclass=Singleton):
         self.engine = create_engine(config.DATABASE)
         session = sessionmaker(bind=self.engine)
         self._session = session()
+        print("DB instance created")
 
         db_path = config.DATABASE.replace("sqlite:///", "")
         if not path.exists(db_path):

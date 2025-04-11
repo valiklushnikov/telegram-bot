@@ -5,7 +5,6 @@ load_dotenv()
 
 
 TOKEN = os.getenv("TOKEN")
-SERV_URL = "https://4c91fbf3f1202bd1f3bb2b44adcd4508.serveo.net"
 
 NAME_DB = "users.db"
 VERSION = "1.0"

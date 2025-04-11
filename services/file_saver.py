@@ -2,11 +2,13 @@ import json
 import os
 from collections import deque
 from settings import config
+from common.interface import Singleton
 
 
-class JSONSaver:
+class JSONSaver(metaclass=Singleton):
     def __init__(self):
         self.data = self.load_from_json()
+        print("File saver created")
 
     def save_to_json(self):
         if not self.data:

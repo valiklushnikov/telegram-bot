@@ -26,10 +26,7 @@ class TelBot:
         self.handler.handle()
         self.bot.remove_webhook()
         sleep(1)
-        # self.bot.set_webhook(
-        #     url=config.SERV_URL,
-        #     allowed_updates=["message", "callback_query"],
-        # )
+
 
 telbot = TelBot()
 telbot.start()
